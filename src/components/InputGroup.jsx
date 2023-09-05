@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import * as St from "../styles/Styles";
 import Input from "./common/Input";
 import Button from "./common/Button";
+import {removeCommas} from "./common/Input"
 
 const InputGroup = () => {
 
@@ -11,12 +12,11 @@ const InputGroup = () => {
   const [price, setPrice] = useState('')
 
   const saveButtonHandler = () => {
-
     if (!name.trim() || !price.trim()) {
       return alert("빈 칸을 채워주세요");
     }
     alert(`
-      name : ${name}, price : ${price}
+      name : ${name}, price : ${removeCommas(price)}
     `);
   };
 
