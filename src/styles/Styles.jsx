@@ -21,8 +21,6 @@ export const BackGround = styled.div`
   background-color: ${({ bc }) => bc};
 `;
 
-
-
 export const Rows = styled.div`
   display: flex;
   flex-direction: row;
@@ -182,9 +180,6 @@ export const SelectOptionGroup = styled.div`
   box-shadow: 1px 1px 3px 1px #ececec;
   background-color: white;
 `;
-
-export const VisibleList = styled.div`
-`
 
 export const HiddenList = styled.div`
   position: relative;

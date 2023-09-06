@@ -12,15 +12,13 @@ const SelectGroup = () => {
     <St.SelectBox>
       <St.Title>Select</St.Title>
       <St.Rows>
-        <St.VisibleList>
-          <Select
-            title="안가려집니다"
-            icon="🔻"
-            options={options}
-            selectedOption={selectedOption1}
-            setSelectedOption={setSelectedOption1}
-          />
-        </St.VisibleList>
+        <Select
+          title="안가려집니다"
+          icon="🔻"
+          options={options}
+          selectedOption={selectedOption1}
+          setSelectedOption={setSelectedOption1}
+        />
 
         <St.HiddenList>
           <Select
