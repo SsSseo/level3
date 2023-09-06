@@ -18,7 +18,7 @@ export const BackGround = styled.div`
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: ${({ bc }) => bc};
 `;
 
 
@@ -182,9 +182,6 @@ export const SelectOptionGroup = styled.div`
   box-shadow: 1px 1px 3px 1px #ececec;
   background-color: white;
 `;
-
-export const Position = styled.div`
-`
 
 export const VisibleList = styled.div`
 `

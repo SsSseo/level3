@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Select from "./common/select/Select";
-import SelectPortal from "./common/select/SelectPortal";
 import * as St from "../styles/Styles";
 
 const SelectGroup = () => {
@@ -13,18 +12,15 @@ const SelectGroup = () => {
     <St.SelectBox>
       <St.Title>Select</St.Title>
       <St.Rows>
-
-        <St.Position>
-          <St.VisibleList>
-            <Select
-              title="안가려집니다"
-              icon="🔻"
-              options={options}
-              selectedOption={selectedOption1}
-              setSelectedOption={setSelectedOption1}
-            />
-          </St.VisibleList>
-        </St.Position>
+        <St.VisibleList>
+          <Select
+            title="안가려집니다"
+            icon="🔻"
+            options={options}
+            selectedOption={selectedOption1}
+            setSelectedOption={setSelectedOption1}
+          />
+        </St.VisibleList>
 
         <St.HiddenList>
           <Select
@@ -35,7 +31,6 @@ const SelectGroup = () => {
             setSelectedOption={setSelectedOption2}
           />
         </St.HiddenList>
-
       </St.Rows>
     </St.SelectBox>
   );

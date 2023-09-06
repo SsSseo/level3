@@ -10,7 +10,7 @@ const Modal = ({ closeModal, backCloseModal, text }) => {
 
   return (
     <>
-      <St.BackGround onClick={backCloseModal}/>
+      <St.BackGround bc="rgba(0, 0, 0, 0.1)" onClick={backCloseModal}/>
       <St.Modal>
         Modal
         {text}
