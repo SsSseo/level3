@@ -22,7 +22,6 @@ const Input = ({ value, setValue, isNumber, title }) => {
       <p>{title}</p>
       <St.InputBox value={value} onChange={(e) =>  onChangeHandler(e)}/>
     </div>
-    
   )
 }
 

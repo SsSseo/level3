@@ -3,6 +3,40 @@ import { styled, css } from "styled-components";
 // features 스타일
 export const Container = styled.div`
   margin: 20px;
+  display: flex;
+  flex-direction: column;
+`;
+
+export const BackGround = styled.div`
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.1);
+`;
+
+export const Modal = styled.div`
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  z-index: 1000;
+  background-color: white;
+  border-radius: 10px;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 10px;
+`;
+
+export const Row = styled.div`
+  display: flex;
+  flex-direction: row;
 `;
 
 // feature 제목
@@ -85,11 +119,15 @@ export const InputGroup = styled.div`
 `;
 
 export const InputBox = styled.input`
-  height: 30px;
-  width: 200px;
+  height: 20px;
+  width: 180px;
   margin-left: 5px;
-  
-  &:focus{
+  border-radius: 5px;
+  border: none;
+  background-color: #ececec;
+  padding: 5px;
+
+  &:focus {
     outline: none;
   }
-`
+`;
