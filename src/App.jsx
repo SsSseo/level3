@@ -1,8 +1,7 @@
-import './App.css';
-import ButtonGroup from './components/ButtonGroup';
-import InputGroup from './components/InputGroup';
-import ModalGroup from './components/ModalGroup';
-import SelectGroup from './components/SelectGroup';
+import ButtonGroup from "./components/ButtonGroup";
+import InputGroup from "./components/InputGroup";
+import ModalGroup from "./components/ModalGroup";
+import SelectGroup from "./components/SelectGroup";
 
 const App = () => {
   return (
@@ -13,6 +12,6 @@ const App = () => {
       <SelectGroup />
     </div>
   );
-}
+};
 
 export default App;

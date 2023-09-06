@@ -5,6 +5,7 @@ export const Container = styled.div`
   margin: 20px;
   display: flex;
   flex-direction: column;
+  margin: 40px 0 0 20px;
 `;
 
 export const Columns = styled.div`
@@ -61,6 +62,12 @@ export const Button = styled.button`
           color: #a84141;
           border: 5px solid #ffcbcb;
         `;
+      default:
+        return css`
+          background-color: #89caff;
+          color: #000052;
+          border: 5px solid #89caff;
+        `;
     }
   }};
 
@@ -84,6 +91,12 @@ export const Button = styled.button`
           width: 80px;
           border: none;
         `;
+      default:
+        return css`
+          height: 40px;
+          width: 100px;
+          border: none;
+        `;
     }
   }};
 `;
@@ -102,7 +115,6 @@ export const InputGroup = styled.div`
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  margin: 10px;
 `;
 
 export const InputBox = styled.input`
@@ -183,7 +195,7 @@ export const SelectOptionGroup = styled.div`
 
 export const HiddenList = styled.div`
   position: relative;
-`
+`;
 
 export const Option = styled.button`
   width: 325px;
@@ -204,4 +216,3 @@ export const Option = styled.button`
     background-color: #ececec;
   }
 `;
-
