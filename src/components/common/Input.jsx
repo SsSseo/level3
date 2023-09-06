@@ -1,6 +1,6 @@
 // common / Input.jsx
 
-import React, { useState } from 'react'
+import React from 'react'
 import * as St from "../../styles/Styles"
 
 export const removeCommas = (str) => str.replace(/[^\d]+/g, "");

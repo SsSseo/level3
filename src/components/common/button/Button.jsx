@@ -1,5 +1,5 @@
 import React from "react";
-import * as St from "../../styles/Styles";
+import * as St from "../../../styles/Styles";
 
 // 버튼 생성
 const BasicButton = ({ children, icon, ...props }) => {

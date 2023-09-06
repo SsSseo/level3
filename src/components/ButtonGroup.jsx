@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "./common/Button";
+import Button from "./common/button/Button";
 import * as St from "../styles/Styles";
-import { IconArrow, IconBell } from "./common/Icon";
+import { IconArrow, IconBell } from "./common/button/Icon";
 
 const ButtonGroup = () => {
   return (

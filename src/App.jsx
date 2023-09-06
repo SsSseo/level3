@@ -1,14 +1,16 @@
 import './App.css';
-import Button from './components/ButtonGroup';
-import Input from './components/InputGroup';
-import Modal from './components/ModalGroup';
+import ButtonGroup from './components/ButtonGroup';
+import InputGroup from './components/InputGroup';
+import ModalGroup from './components/ModalGroup';
+import SelectGroup from './components/SelectGroup';
 
 const App = () => {
   return (
     <div>
-      <Button />
-      <Input />
-      <Modal />
+      <ButtonGroup />
+      <InputGroup />
+      <ModalGroup />
+      <SelectGroup />
     </div>
   );
 }

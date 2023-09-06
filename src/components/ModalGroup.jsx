@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Button from "./common/Button";
+import Button from "./common/button/Button";
 import Modal from "./common/Modal";
 import * as St from "../styles/Styles";
 
@@ -22,7 +22,7 @@ const ModalGroup = () => {
   return (
     <St.Container>
       <St.Title>Modal</St.Title>
-      <St.Row>
+      <St.Rows>
         <Button 
           onClick={() => setIsFirstModalOpen(true)} 
           typeButton="negative" 
@@ -45,7 +45,7 @@ const ModalGroup = () => {
                                 backCloseModal={closeModal} 
                                 text="닫기버튼 1개가 있고, 외부 영역을 누르면 모달이 닫혀요." 
                               />)}
-      </St.Row>
+      </St.Rows>
     </St.Container>
   );
 };
